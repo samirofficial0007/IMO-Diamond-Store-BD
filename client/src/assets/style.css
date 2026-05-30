@@ -22,6 +22,8 @@ padding: 15px;
 text-align: center;
 
 border-bottom: 2px solid #A6D2E6;
+
+box-shadow: 0 0 15px rgba(166, 210, 230, 0.25);
 }
 
 nav h2 {
@@ -48,10 +50,14 @@ border-radius: 8px;
 cursor: pointer;
 
 font-weight: bold;
+
+transition: all 0.3s ease;
 }
 
 button:hover {
-opacity: 0.9;
+transform: translateY(-2px);
+
+box-shadow: 0 0 15px rgba(166, 210, 230, 0.4);
 }
 
 h1,
@@ -63,8 +69,11 @@ text-align: center;
 
 .package-container {
 display: grid;
+
 grid-template-columns: 1fr;
+
 gap: 12px;
+
 padding: 15px;
 }
 
@@ -78,16 +87,33 @@ background: linear-gradient(
 
 border: 1px solid #A6D2E6;
 
-border-radius: 12px;
+border-radius: 16px;
 
-padding: 15px;
+padding: 18px;
 
-box-shadow: 0 0 12px rgba(166, 210, 230, 0.25);
+text-align: center;
+
+box-shadow:
+0 0 12px rgba(166, 210, 230, 0.25),
+0 0 25px rgba(166, 210, 230, 0.15);
+
+transition: all 0.3s ease;
+}
+
+.package-card:hover {
+transform: translateY(-4px);
+
+box-shadow:
+0 0 18px rgba(203, 230, 242, 0.35),
+0 0 35px rgba(166, 210, 230, 0.25);
 }
 
 .package-card h3 {
 color: #CBE6F2;
+
 margin-bottom: 8px;
+
+text-shadow: 0 0 8px rgba(166, 210, 230, 0.6);
 }
 
 .package-card p {
@@ -96,7 +122,9 @@ margin-bottom: 10px;
 
 footer {
 margin-top: 20px;
+
 padding: 20px;
+
 text-align: center;
 
 border-top: 2px solid #A6D2E6;
@@ -106,6 +134,16 @@ background: linear-gradient(
 #1D262B,
 #242E35
 );
+
+box-shadow: 0 0 15px rgba(166, 210, 230, 0.2);
+}
+
+ul {
+padding-left: 25px;
+}
+
+li {
+margin: 6px 0;
 }
 
 @media (min-width: 768px) {
