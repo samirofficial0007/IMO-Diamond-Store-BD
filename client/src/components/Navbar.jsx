@@ -3,10 +3,12 @@ function Navbar() {
     <nav>
       <h2>IMO Diamond Store BD</h2>
 
-      <div>
-        <button>Login</button>
-        <button>Register</button>
-      </div>
+      <hr />
+
+      <button>Home</button>
+      <button>Login</button>
+      <button>Register</button>
+      <button>Contact</button>
     </nav>
   );
 }
