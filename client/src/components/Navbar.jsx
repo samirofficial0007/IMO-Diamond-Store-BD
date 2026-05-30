@@ -31,7 +31,6 @@ return (
 <div
 style={{
 display: "flex",
-justifyContent: "space-between",
 alignItems: "center"
 }}
 >
@@ -48,7 +47,10 @@ fontSize: "20px"
       style={{
         color: "#CBE6F2",
         textShadow: "0 0 10px rgba(166,210,230,0.8)",
-        fontSize: "18px"
+        fontSize: "18px",
+        flex: 1,
+        textAlign: "center",
+        marginRight: "40px"
       }}
     >
       ◈ IMO Black Diamond Store BD
