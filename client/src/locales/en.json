@@ -1,1 +1,13 @@
-
+{
+  "siteName": "IMO Diamond Store BD",
+  "login": "Login",
+  "register": "Register",
+  "home": "Home",
+  "profile": "Profile",
+  "orders": "Orders",
+  "notifications": "Notifications",
+  "contact": "Contact",
+  "buyNow": "Buy Now",
+  "payment": "Payment",
+  "logout": "Logout"
+}
