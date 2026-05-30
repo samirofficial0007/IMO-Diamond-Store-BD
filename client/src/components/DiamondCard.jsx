@@ -1,16 +1,11 @@
+import { useState } from "react";
+import PaymentModal from "./PaymentModal";
+
 function DiamondCard({ diamond, price }) {
-const scrollToOrderForm = () => {
-const section = document.getElementById("order-form");
-
-if (section) {
-  section.scrollIntoView({
-    behavior: "smooth"
-  });
-}
-
-};
+const [isModalOpen, setIsModalOpen] = useState(false);
 
 return (
+<>
 <div className="package-card">
 <div
 style={{
@@ -24,14 +19,22 @@ marginBottom: "10px"
 ◈
 </div>
 
-  <h3>{diamond} Diamond</h3>
+    <h3>{diamond} Diamond</h3>
 
-  <p>{price} BDT</p>
+    <p>{price} BDT</p>
 
-  <button onClick={scrollToOrderForm}>
-    Buy Now
-  </button>
-</div>
+    <button
+      onClick={() => setIsModalOpen(true)}
+    >
+      Buy Now
+    </button>
+  </div>
+
+  <PaymentModal
+    isOpen={isModalOpen}
+    onClose={() => setIsModalOpen(false)}
+  />
+</>
 
 );
 }
