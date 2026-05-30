@@ -1,16 +1,17 @@
 function Navbar() {
-  return (
-    <nav>
-      <h2>IMO Diamond Store BD</h2>
+return (
+<nav>
+<h2>💎 IMO Diamond Store BD</h2>
 
-      <hr />
+  <div>
+    <button>Home</button>
+    <button>Login</button>
+    <button>Register</button>
+    <button>Contact</button>
+  </div>
+</nav>
 
-      <button>Home</button>
-      <button>Login</button>
-      <button>Register</button>
-      <button>Contact</button>
-    </nav>
-  );
+);
 }
 
 export default Navbar;
