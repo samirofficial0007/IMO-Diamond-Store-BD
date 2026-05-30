@@ -1,4 +1,15 @@
 function DiamondCard({ diamond, price }) {
+const scrollToOrderForm = () => {
+const section = document.getElementById("order-form");
+
+if (section) {
+  section.scrollIntoView({
+    behavior: "smooth"
+  });
+}
+
+};
+
 return (
 <div className="package-card">
 <div
@@ -17,7 +28,9 @@ marginBottom: "10px"
 
   <p>{price} BDT</p>
 
-  <button>Buy Now</button>
+  <button onClick={scrollToOrderForm}>
+    Buy Now
+  </button>
 </div>
 
 );
