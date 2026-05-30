@@ -1,6 +1,10 @@
+import Navbar from "../components/Navbar";
+
 function Home() {
   return (
     <div>
+      <Navbar />
+
       <h1>IMO Diamond Store BD</h1>
 
       <p>Trusted IMO Diamond Seller</p>
