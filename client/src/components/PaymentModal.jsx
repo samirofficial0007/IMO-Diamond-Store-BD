@@ -2,6 +2,7 @@ import { useState } from "react";
 
 function PaymentModal({ isOpen, onClose }) {
 const [method, setMethod] = useState("Nagad");
+const [copied, setCopied] = useState(false);
 
 if (!isOpen) return null;
 
@@ -20,7 +21,13 @@ return "895171022";
 
 const copyInfo = () => {
 navigator.clipboard.writeText(getPaymentInfo());
-alert("Copied");
+
+setCopied(true);
+
+setTimeout(() => {
+  setCopied(false);
+}, 2000);
+
 };
 
 return (
@@ -42,10 +49,18 @@ maxWidth: "420px",
 background: "#1D262B",
 border: "1px solid #A6D2E6",
 borderRadius: "16px",
-padding: "20px"
+padding: "20px",
+color: "#CBE6F2"
 }}
 >
-<h2>Payment Form</h2>
+<h2
+style={{
+textAlign: "center",
+marginBottom: "15px"
+}}
+>
+Payment Form
+</h2>
 
     <input
       type="text"
@@ -53,8 +68,8 @@ padding: "20px"
       style={{
         width: "100%",
         padding: "10px",
-        marginTop: "10px",
-        marginBottom: "10px"
+        marginBottom: "10px",
+        borderRadius: "8px"
       }}
     />
 
@@ -64,20 +79,37 @@ padding: "20px"
       style={{
         width: "100%",
         padding: "10px",
-        marginBottom: "10px"
+        marginBottom: "10px",
+        background: "#242E35",
+        color: "#CBE6F2",
+        border: "1px solid #A6D2E6",
+        borderRadius: "8px"
       }}
     >
-      <option>Nagad</option>
-      <option>bKash</option>
-      <option>Binance Pay</option>
+      <option value="Nagad">Nagad</option>
+      <option value="bKash">bKash</option>
+      <option value="Binance Pay">Binance Pay</option>
     </select>
+
+    {method === "Nagad" && (
+      <p
+        style={{
+          fontSize: "13px",
+          marginBottom: "8px"
+        }}
+      >
+        Nagad Personal Number (Send Money)
+      </p>
+    )}
 
     <div
       style={{
         background: "#242E35",
-        padding: "10px",
+        padding: "12px",
         borderRadius: "8px",
-        marginBottom: "10px"
+        marginBottom: "10px",
+        textAlign: "center",
+        fontWeight: "bold"
       }}
     >
       {getPaymentInfo()}
@@ -93,6 +125,18 @@ padding: "20px"
       Copy
     </button>
 
+    {copied && (
+      <p
+        style={{
+          textAlign: "center",
+          color: "#A6D2E6",
+          marginBottom: "10px"
+        }}
+      >
+        Copied ✓
+      </p>
+    )}
+
     <div
       style={{
         color: "#ffb3b3",
@@ -100,8 +144,9 @@ padding: "20px"
         marginBottom: "10px"
       }}
     >
-      ⚠️ ভুল IMO ID অথবা ভুল নম্বরে টাকা পাঠালে
-      আমরা দায়ী থাকবো না।
+      ⚠️ ভুল IMO ID দিলে বা ভুল নম্বরে টাকা পাঠালে
+      আমরা কোনো দায়ভার গ্রহণ করবো না।
+      Payment করার আগে সব তথ্য যাচাই করুন।
     </div>
 
     <input
@@ -114,7 +159,8 @@ padding: "20px"
       style={{
         width: "100%",
         padding: "10px",
-        marginBottom: "10px"
+        marginBottom: "10px",
+        borderRadius: "8px"
       }}
     />
 
