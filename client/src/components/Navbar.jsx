@@ -3,6 +3,29 @@ import { useState } from "react";
 function Navbar() {
 const [menuOpen, setMenuOpen] = useState(false);
 
+const scrollToPackages = () => {
+const section = document.getElementById("packages");
+
+if (section) {
+  section.scrollIntoView({
+    behavior: "smooth"
+  });
+}
+
+setMenuOpen(false);
+
+};
+
+const scrollToTop = () => {
+window.scrollTo({
+top: 0,
+behavior: "smooth"
+});
+
+setMenuOpen(false);
+
+};
+
 return (
 <nav>
 <div
@@ -41,13 +64,33 @@ fontSize: "20px"
         gap: "8px"
       }}
     >
-      <button>Home</button>
-      <button>Buy Diamond</button>
-      <button>Login</button>
-      <button>Register</button>
-      <button>Contact</button>
-      <button>English</button>
-      <button>বাংলা</button>
+      <button onClick={scrollToTop}>
+        Home
+      </button>
+
+      <button onClick={scrollToPackages}>
+        Buy Diamond
+      </button>
+
+      <button>
+        Login
+      </button>
+
+      <button>
+        Register
+      </button>
+
+      <button>
+        Contact
+      </button>
+
+      <button>
+        English
+      </button>
+
+      <button>
+        বাংলা
+      </button>
     </div>
   )}
 </nav>
