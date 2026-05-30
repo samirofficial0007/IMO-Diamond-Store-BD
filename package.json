@@ -1,12 +1,8 @@
 {
   "name": "imo-diamond-store-bd",
   "version": "1.0.0",
-  "description": "IMO Diamond Store BD",
   "main": "server/server.js",
   "scripts": {
     "start": "node server/server.js"
-  },
-  "keywords": [],
-  "author": "samir",
-  "license": "MIT"
+  }
 }
