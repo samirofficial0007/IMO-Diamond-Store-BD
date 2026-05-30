@@ -1,9 +1,9 @@
-function DiamondCard() {
+function DiamondCard({ diamond, price }) {
   return (
     <div>
-      <h3>420 Diamond</h3>
+      <h3>{diamond} Diamond</h3>
 
-      <p>Price: 500 BDT</p>
+      <p>Price: {price} BDT</p>
 
       <button>Buy Now</button>
     </div>
