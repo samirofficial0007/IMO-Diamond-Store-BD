@@ -1,13 +1,14 @@
 function DiamondCard({ diamond, price }) {
-  return (
-    <div>
-      <h3>{diamond} Diamond</h3>
+return (
+<div className="package-card">
+<h3>{diamond} Diamond</h3>
 
-      <p>Price: {price} BDT</p>
+  <p>{price} BDT</p>
 
-      <button>Buy Now</button>
-    </div>
-  );
+  <button>Buy Now</button>
+</div>
+
+);
 }
 
 export default DiamondCard;
