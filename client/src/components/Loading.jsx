@@ -1,7 +1,9 @@
 function Loading() {
   return (
     <div>
-      <h3>Loading...</h3>
+      <h2>Loading...</h2>
+
+      <p>Please wait.</p>
     </div>
   );
 }
