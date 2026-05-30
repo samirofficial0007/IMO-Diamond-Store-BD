@@ -14,37 +14,77 @@ return (
   <div
     style={{
       textAlign: "center",
-      padding: "30px 20px"
+      padding: "35px 20px"
     }}
   >
     <LanguageSwitcher />
 
-    <h1
-      style={{
-        color: "#CBE6F2",
-        marginTop: "20px",
-        fontSize: "32px",
-        textShadow: "0 0 15px rgba(166,210,230,0.8)"
-      }}
-    >
-      ◈ IMO Black Diamond Store BD
-    </h1>
-
-    <p
-      style={{
-        marginTop: "12px",
-        color: "#A6D2E6"
-      }}
-    >
-      Fast • Trusted • Secure Diamond Delivery
-    </p>
-
     <div
       style={{
-        marginTop: "20px"
+        marginTop: "25px",
+        background:
+          "linear-gradient(135deg, #1D262B, #242E35, #4D626C)",
+        border: "1px solid #A6D2E6",
+        borderRadius: "18px",
+        padding: "25px",
+        boxShadow: "0 0 20px rgba(166,210,230,0.25)"
       }}
     >
-      <button>Buy Diamond Now</button>
+      <div
+        style={{
+          fontSize: "48px",
+          color: "#CBE6F2",
+          textShadow:
+            "0 0 12px rgba(166,210,230,0.8)"
+        }}
+      >
+        ◈
+      </div>
+
+      <h1
+        style={{
+          color: "#CBE6F2",
+          marginTop: "10px",
+          fontSize: "32px",
+          textShadow:
+            "0 0 15px rgba(166,210,230,0.8)"
+        }}
+      >
+        IMO Black Diamond Store BD
+      </h1>
+
+      <p
+        style={{
+          marginTop: "12px",
+          color: "#A6D2E6"
+        }}
+      >
+        Fast • Trusted • Secure Delivery
+      </p>
+
+      <p
+        style={{
+          marginTop: "10px",
+          color: "#CBE6F2",
+          fontSize: "14px"
+        }}
+      >
+        ✓ Instant Processing
+        <br />
+        ✓ Trusted Seller
+        <br />
+        ✓ Manual Verification
+      </p>
+
+      <div
+        style={{
+          marginTop: "20px"
+        }}
+      >
+        <button>
+          Buy Diamond Now
+        </button>
+      </div>
     </div>
   </div>
 
