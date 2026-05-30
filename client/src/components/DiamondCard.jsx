@@ -3,10 +3,11 @@ return (
 <div className="package-card">
 <div
 style={{
-fontSize: "34px",
-marginBottom: "10px",
+fontSize: "38px",
 color: "#CBE6F2",
-textShadow: "0 0 12px rgba(166,210,230,0.9)"
+textShadow:
+"0 0 10px rgba(166,210,230,0.8), 0 0 20px rgba(166,210,230,0.4)",
+marginBottom: "10px"
 }}
 >
 ◈
