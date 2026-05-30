@@ -4,6 +4,7 @@ import PackageList from "../components/PackageList";
 import WarningNotice from "../components/WarningNotice";
 import NotificationBox from "../components/NotificationBox";
 import PaymentMethod from "../components/PaymentMethod";
+import OrderForm from "../components/OrderForm";
 import Footer from "../components/Footer";
 
 function Home() {
@@ -34,8 +35,7 @@ return (
         style={{
           fontSize: "48px",
           color: "#CBE6F2",
-          textShadow:
-            "0 0 12px rgba(166,210,230,0.8)"
+          textShadow: "0 0 12px rgba(166,210,230,0.8)"
         }}
       >
         ◈
@@ -46,8 +46,7 @@ return (
           color: "#CBE6F2",
           marginTop: "10px",
           fontSize: "32px",
-          textShadow:
-            "0 0 15px rgba(166,210,230,0.8)"
+          textShadow: "0 0 15px rgba(166,210,230,0.8)"
         }}
       >
         IMO Black Diamond Store BD
@@ -91,6 +90,8 @@ return (
   <NotificationBox />
 
   <PackageList />
+
+  <OrderForm />
 
   <PaymentMethod />
 
