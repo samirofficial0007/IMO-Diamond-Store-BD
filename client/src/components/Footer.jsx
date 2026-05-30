@@ -5,7 +5,9 @@ function Footer() {
 
       <p>IMO Diamond Store BD</p>
 
-      <p>Telegram | Facebook | Discord</p>
+      <p>Telegram Group Available</p>
+
+      <p>Discord: panelvai07</p>
 
       <p>© All Rights Reserved</p>
     </footer>
