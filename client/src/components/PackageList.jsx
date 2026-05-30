@@ -17,7 +17,7 @@ const packages = [
 ];
 
 return (
-<div>
+<div id="packages">
 <h2>Diamond Packages</h2>
 
   <div className="package-container">
