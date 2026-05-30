@@ -1,1 +1,13 @@
-
+{
+  "siteName": "IMO Diamond Store BD",
+  "login": "লগইন",
+  "register": "রেজিস্টার",
+  "home": "হোম",
+  "profile": "প্রোফাইল",
+  "orders": "অর্ডারসমূহ",
+  "notifications": "নোটিফিকেশন",
+  "contact": "যোগাযোগ",
+  "buyNow": "এখনই কিনুন",
+  "payment": "পেমেন্ট",
+  "logout": "লগআউট"
+}
