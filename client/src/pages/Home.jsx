@@ -1,30 +1,22 @@
 import Navbar from "../components/Navbar";
+import LanguageSwitcher from "../components/LanguageSwitcher";
+import PackageList from "../components/PackageList";
+import WarningNotice from "../components/WarningNotice";
 
 function Home() {
   return (
     <div>
       <Navbar />
 
+      <LanguageSwitcher />
+
       <h1>IMO Diamond Store BD</h1>
 
       <p>Trusted IMO Diamond Seller</p>
 
-      <h2>Popular Packages</h2>
+      <PackageList />
 
-      <div>
-        <p>10 Diamond - 50 BDT</p>
-        <button>Buy Now</button>
-      </div>
-
-      <div>
-        <p>42 Diamond - 141 BDT</p>
-        <button>Buy Now</button>
-      </div>
-
-      <div>
-        <p>84 Diamond - 280 BDT</p>
-        <button>Buy Now</button>
-      </div>
+      <WarningNotice />
     </div>
   );
 }
