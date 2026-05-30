@@ -5,31 +5,48 @@
   }
 
 body {
-background: #0f0f0f;
-color: white;
+background: #0b1014;
+color: #eaf6ff;
 font-family: Arial, sans-serif;
 }
 
 nav {
-background: #181818;
+background: linear-gradient(
+135deg,
+#1D262B,
+#242E35,
+#1D262B
+);
+
 padding: 15px;
 text-align: center;
-border-bottom: 2px solid #ff7a00;
+
+border-bottom: 2px solid #A6D2E6;
 }
 
 nav h2 {
 margin-bottom: 10px;
-color: #ff7a00;
 }
 
 button {
-background: #ff7a00;
+background: linear-gradient(
+135deg,
+#242E35,
+#4D626C
+);
+
 color: white;
-border: none;
+
+border: 1px solid #A6D2E6;
+
 padding: 10px 15px;
+
 margin: 5px;
+
 border-radius: 8px;
+
 cursor: pointer;
+
 font-weight: bold;
 }
 
@@ -52,14 +69,24 @@ padding: 15px;
 }
 
 .package-card {
-background: #1b1b1b;
-border: 1px solid #333;
+background: linear-gradient(
+135deg,
+#1D262B,
+#242E35,
+#4D626C
+);
+
+border: 1px solid #A6D2E6;
+
 border-radius: 12px;
+
 padding: 15px;
+
+box-shadow: 0 0 12px rgba(166, 210, 230, 0.25);
 }
 
 .package-card h3 {
-color: #ff7a00;
+color: #CBE6F2;
 margin-bottom: 8px;
 }
 
@@ -71,8 +98,14 @@ footer {
 margin-top: 20px;
 padding: 20px;
 text-align: center;
-border-top: 1px solid #333;
-background: #181818;
+
+border-top: 2px solid #A6D2E6;
+
+background: linear-gradient(
+135deg,
+#1D262B,
+#242E35
+);
 }
 
 @media (min-width: 768px) {
