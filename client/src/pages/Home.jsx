@@ -7,27 +7,34 @@ import PaymentMethod from "../components/PaymentMethod";
 import Footer from "../components/Footer";
 
 function Home() {
-  return (
-    <div>
-      <Navbar />
+return (
+<div>
+<Navbar />
 
-      <LanguageSwitcher />
+  <div style={{ textAlign: "center", padding: "20px" }}>
+    <LanguageSwitcher />
 
-      <h1>IMO Diamond Store BD</h1>
+    <h1 style={{ color: "#ff7a00", marginTop: "15px" }}>
+      IMO Diamond Store BD
+    </h1>
 
-      <p>Trusted IMO Diamond Seller</p>
+    <p style={{ marginTop: "10px" }}>
+      Trusted & Fast IMO Diamond Seller
+    </p>
+  </div>
 
-      <NotificationBox />
+  <NotificationBox />
 
-      <PackageList />
+  <PackageList />
 
-      <PaymentMethod />
+  <PaymentMethod />
 
-      <WarningNotice />
+  <WarningNotice />
 
-      <Footer />
-    </div>
-  );
+  <Footer />
+</div>
+
+);
 }
 
 export default Home;
